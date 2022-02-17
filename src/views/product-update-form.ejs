@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/form.css">
+        <title>Creacion de plato</title>
+    </head>
+    <body>
+
+        <nav class="ps-top">
+            <div class="ps-bar ps-white ps-padding ps-card ps-nav">
+              <a href="#home" class="ps-bar-item ps-button">Pimienta & Sal</a>
+              <!-- Right-sided navbar links. Hide them on small screens -->
+              <div class="ps-right ps-hide-small">
+                <a href="#about" class="ps-bar-item ps-button">About</a>
+                <a href="#menu" class="ps-bar-item ps-button">Menu</a>
+              </div>
+            </div>
+        </nav>
+
+        <header class="ps-display-container ps-content ps-wide" id="home">
+            <img
+              class="ps-image"
+              src="/images/header.jpg"
+              alt="Pimienta & Sal"
+              width="1600"
+              height="800"
+            />
+            <div class="ps-display-bottomleft ps-padding-large ps-opacity">
+              <h1 class="ps-xxlarge">Sabores que enamoran</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form action=""  method="???">
+          
+                  <div class="field-wrap">
+                    <label for="name">Nombre de plato:</label>
+                    <input type="text" name="name" id="name">
+                  </div>
+                  
+                  <div class="field-wrap">
+                    <label for="price">Precio:</label>
+                    <input type="text" name="price" id="price">
+                  </div>
+                  
+                  <div class="field-wrap" >
+                    <label for="description">Descripcion:</label>
+                    <textarea name="description" id="description">
+                    </textarea>
+                  </div>
+                  
+                  <div class="field-wrap">
+                    <button type="submit">
+                      actualizar
+                    </button>
+                  </div>
+  
+                </form>
+            </div>            
+        </main>    
+
+    </body>
+</html>
