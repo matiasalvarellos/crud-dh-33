@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Pimienta & sal</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
   </head>
   <body>
     <!-- Navbar (sit on top) -->
@@ -21,13 +22,6 @@
 
     <!-- Header -->
     <header class="ps-display-container ps-content ps-wide" id="home">
-      <img
-        class="ps-image"
-        src="/img/header.jpg"
-        alt="Pimienta & Sal"
-        width="1600"
-        height="800"
-      />
       <div class="ps-display-bottomleft ps-padding-large ps-opacity">
         <h1 class="ps-xxlarge">Sabores que enamoran</h1>
       </div>
@@ -35,26 +29,30 @@
 
     <!-- Page content -->
     <div class="ps-content">
-
       <!-- Menu Section -->
       <div class="ps-row ps-padding-64" id="menu">
         <div class="ps-col l6 ps-padding-large">
-          <div>
-            <h1 class="ps-center">TITULO</h1>
-            <br />
-            <h4>DESCRIPCION</h4>
-            <p class="ps-text-grey">
-              PRECIO
-            </p>
-          </div>
+          <article>
+            <div class="img-container">
+              <img src="/img/principal.jpg" class="img-plato" alt="plato">
+            </div>
+            
+            <p>informacion del plato:</p>
+            <ul>
+              <li>
+              Nombre: <%= product.name %>  
+            </li>
+            <li>
+              Descripcion: <%= product.description %> 
+            </li>
+            <li>
+              Precio: <%= product.price %> 
+            </li>
+          </ul>
+        </article>
         </div>
 
         <div class="ps-col l6 ps-padding-large ps-img-menu">
-          <img
-            src="/img/menu.jpg"
-            class="ps-round ps-image ps-opacity-min"
-            alt="Menu"
-          />
         </div>
       </div>
 

@@ -15,7 +15,13 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
-
+.title{
+  margin-top: 20px;
+}
+.img-plato{
+  width: 70%;
+  height: 500px;
+}
 hr {
   border: 0;
   border-top: 1px solid #eee;
