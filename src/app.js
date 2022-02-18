@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const path = require("path");
+const methodOverride = require("method-override")
 // Acá falta uno... 😇
 const mainRouter = require("./routes/mainRouter");
 const productRouter = require("./routes/productRouter");
@@ -9,6 +10,7 @@ const productRouter = require("./routes/productRouter");
 // Configuración
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride("_method"));
 // Acá falta el template engine
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs');

@@ -15,6 +15,7 @@
         <div class="ps-right ps-hide-small">
           <a href="#about" class="ps-bar-item ps-button">About</a>
           <a href="#menu" class="ps-bar-item ps-button">Menu</a>
+          <a href="/products/list" class="ps-bar-item ps-button">Listado</a>
         </div>
       </div>
     </nav>
@@ -33,16 +34,16 @@
         <div class="img-container">
           <img src="/img/principal.jpg" class="img-dish" alt="img-dish">
         </div>
-        <p>informacion del plato:</p>
+        <p>informacion del plato:  </p>
         <ul>
           <li>
-              Nombre:  
+              Nombre: <%= product.name %>
           </li>
           <li>
-              Descripcion: 
+              Descripcion: <%= product.description %> 
           </li>
           <li>
-              Precio: 
+              Precio: <%= product.price %> 
           </li>
         </ul>
       </article>

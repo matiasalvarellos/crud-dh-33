@@ -2,7 +2,7 @@
 // un objeto literal con las acciones para cada ruta
 const mainController = {
     home: function(req, res){
-        res.render("product-update-form")
+        res.render("index");
     }
 }   
 // Acá exportamos el resultado
