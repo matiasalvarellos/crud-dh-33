@@ -33,17 +33,16 @@ const service = {
     },
     update: function(payload, id){
         const products = this.findAll()
-        
-        let productsUpdate = products.map(function(product){
-            if(product.id == id){
-                return {
-                    id: product.id,
-                    ...payload,
-                }
-            }
-            return product
+
+        let product = products.find(function(product){
+            return product.id == id;
         })
-        this.writeFile(productsUpdate);
+        
+        product.name = payload.name;
+        product.description = payload.description;
+        product.price = payload.price;
+
+        this.writeFile(products);
     },
     destroy: function(id){
         let products = this.findAll();
